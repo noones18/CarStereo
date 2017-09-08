@@ -7,8 +7,8 @@
     tools:context="edu.up.cs371.noones18.carstereo.MainActivity">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="1264dp"
+        android:layout_height="747dp"
         android:background="@android:color/holo_purple"
         android:orientation="vertical"
         tools:layout_editor_absoluteY="8dp"
@@ -19,7 +19,7 @@
             android:layout_height="316dp"
             android:orientation="horizontal"
             android:weightSum="1"
-            tools:background="#FF0000"
+            tools:background="@color/colorPrimary"
             tools:layout_width="match_parent">
 
             <LinearLayout
@@ -31,7 +31,7 @@
                 <SeekBar
                     android:id="@+id/seekBar4"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="100dp"
                     android:layout_weight="0.01" />
 
                 <LinearLayout
@@ -83,6 +83,13 @@
 
                 </LinearLayout>
 
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.01"
+                    android:text="TextView" />
+
                 <SeekBar
                     android:id="@+id/seekBar5"
                     android:layout_width="match_parent"
@@ -127,7 +134,96 @@
             android:orientation="horizontal"
             tools:background="@android:color/holo_orange_dark"
             tools:layout_editor_absoluteX="30dp"
-            tools:layout_editor_absoluteY="335dp"></LinearLayout>
+            tools:layout_editor_absoluteY="335dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="99dp"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:id="@+id/CDport"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:background="@android:color/background_dark"
+                        android:text="Insert CD"
+                        android:textColor="@android:color/background_light" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:id="@+id/PauseB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:text="Pause"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/StartB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:text="Start"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/EjectB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:text="Eject"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/ForwardB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:text="Forward"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/BackB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:text="Back"
+                        android:textSize="20sp" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
 
     </LinearLayout>
 
