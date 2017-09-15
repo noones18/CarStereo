@@ -26,10 +26,11 @@
                 android:layout_width="859dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.86"
+                android:background="@color/colorPrimaryDark"
                 android:orientation="vertical">
 
                 <SeekBar
-                    android:id="@+id/seekBar4"
+                    android:id="@+id/RadioBar"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:layout_weight="0.01" />
@@ -44,42 +45,49 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="1" />
+                        android:text="1"
+                        android:onClick="sendMessage"
+                        />
 
                     <Button
                         android:id="@+id/Station2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="2" />
+                        android:text="2"
+                        android:onClick="sendMessage"/>
 
                     <Button
                         android:id="@+id/Station3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="3" />
+                        android:text="3"
+                        android:onClick="sendMessage"/>
 
                     <Button
                         android:id="@+id/Station4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="4" />
+                        android:text="4"
+                        android:onClick="sendMessage"/>
 
                     <Button
                         android:id="@+id/Station5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="5" />
+                        android:text="5"
+                        android:onClick="sendMessage"/>
 
                     <Button
                         android:id="@+id/Station6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="6" />
+                        android:text="6"
+                        android:onClick="sendMessage"/>
 
                 </LinearLayout>
 
@@ -88,10 +96,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.01"
-                    android:text="TextView" />
+                    android:text="Volume" />
 
                 <SeekBar
-                    android:id="@+id/seekBar5"
+                    android:id="@+id/Volume"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.14" />
@@ -105,23 +113,36 @@
                 android:orientation="vertical"
                 tools:layout_height="316dp">
 
-                <Button
+                <ToggleButton
                     android:id="@+id/powerbutton"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:onClick="OnOff"
                     android:text="Power" />
 
-                <Button
-                    android:id="@+id/AMbutton"
+                <TextView
+                    android:id="@+id/RadioProgress"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="AM" />
+                    android:text="Nothing"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="20sp" />
 
-                <Button
-                    android:id="@+id/FMbutton"
+                <ToggleButton
+                    android:id="@+id/AMFMbutton"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="FM" />
+                    android:text="AM"
+                    android:textOff="FM"
+                    android:textOn="AM" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" />
+
+
             </LinearLayout>
 
         </LinearLayout>
@@ -213,6 +234,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="100dp"
                         android:layout_weight="1"
+                        android:background="?attr/colorButtonNormal"
                         android:text="Back"
                         android:textSize="20sp" />
 
